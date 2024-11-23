@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gongting/welcome.dart';
 
 class SignupPage extends StatefulWidget {
   const SignupPage({super.key});
@@ -578,6 +579,10 @@ class _SignupPageState extends State<SignupPage> {
           ),
           onPressed: () {
             // _isServiceChecked && _isPrivateChecked ? 회원가입 로직 실행 : 눌러도 실행 X
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => WelcomePage()),
+            );
           },
         ),
       ),
